@@ -2,162 +2,175 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMass Spring Chess Classic</title>
+    <title>UMass Amherst Chess Club Tournament</title>
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
+        /* Styles for navigation bar */
+        .navbar {
+            background-color: #800000;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #600000;
+        }
+
+        /* Rest of the styles from previous code */
+        body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
+            margin: 20px;
+            background-color: #f4f4f9;
             color: #333;
         }
-        .full-page {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        .container {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        h1, h2, h3 {
+            color: #800000;
             text-align: center;
-            background-color: #ffffff;
+        }
+        .content-block {
+            background-color: #fff0f0;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            margin: 40px;
-        }
-        h1 {
-            color: #007bff;
-            margin-bottom: 0;
-        }
-        h2 {
-            color: #444;
-            margin: 10px 0 20px;
-        }
-        p, li, td, th {
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        .prize {
-            background-color: #e6f7ff;
-            border-left: 6px solid #007bff;
-            margin: 20px 0;
-            padding: 10px 20px;
-            text-align: left;
-            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         table {
-            width: 80%;
-            margin-top: 20px;
+            width: 100%;
+            margin-top: 10px;
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
             padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #007bff;
-            color: white;
+            background-color: #e3b4b4;
         }
-        .register-button {
-            background-color: #28a745;
-            color: white;
-            padding: 10px 24px;
-            margin: 20px 0;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        a {
+            color: #800000;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
             font-size: 18px;
+            line-height: 1.6;
         }
-        .register-button:hover {
-            background-color: #218838;
-        }
-        .creative-statement {
-            font-style: italic;
-            margin: 20px auto;
-            width: 80%;
-            font-size: 18px;
-        }
-        .footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            background: #f0f8ff;
-            width: 100%;
-        }
-        @media (max-width: 600px) {
-            .container {
-                margin: 20px;
-            }
-            table {
-                width: 100%;
-            }
+        .location-link a {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="full-page">
-        <div class="container">
-            <h1>UMass Spring Chess Classic</h1>
-            <p><strong>When Strategy Meets Passion: Experience the Ultimate Battle of Minds</strong></p>
-            <p><strong>Dates:</strong> April 13-14 | <strong>Venue:</strong> <a href="https://www.google.com/maps/place/UMass+Student+Union/@42.390842,-72.5302307,17z/data=!3m1!4b1!4m6!3m5!1s0x89e6d270de1393d5:0x4cf4f7a50b4daa12!8m2!3d42.390842!4d-72.5276558!16s%2Fg%2F1v7pzhr7?entry=ttu" class="venue-link">Student Union Ballroom, UMass Amherst</a></p>
-            <div class="prize">
-                <strong>Prize Fund:</strong> $5,000 - Prepare to Battle for Glory and Gold!<br>
-                1st: $2000, 2nd: $1250, 3rd: $750, Best Under 2200: $600, Best Under 2000: $400
-            </div>
-            <p><strong>Entry Fee:</strong> $110 pre-registration, $120 at-site | Registration closes at 9:30 AM</p>
-            <p><strong>Time Control:</strong> G/90;d5 - The Clock is Ticking, Are You Ready?</p>
+    <div class="navbar">
+        <a href="#details">Details</a>
+        <a href="#prizes">Prize Money</a>
+        <a href="#entry-fee">Entry Fees</a>
+        <a href="#time-info">Time Control and Rounds</a>
+        <a href="#blitz">Blitz Tournament Format</a>
+        <a href="#registration">Registration</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-            <h2>Round Times</h2>
-            <table>
-                <tr>
-                    <th>Day</th>
-                    <th>Time</th>
-                    <th>Event</th>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>10 AM</td>
-                    <td>Round 1</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>2 PM</td>
-                    <td>Round 2</td>
-                </tr>
-                <tr>
-                    <td>Saturday</td>
-                    <td>5:30 PM</td>
-                    <td>Round 3</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>10 AM</td>
-                    <td>Round 4</td>
-                </tr>
-                <tr>
-                    <td>Sunday</td>
-                    <td>2 PM</td>
-                    <td>Round 5</td>
-                </tr>
-            </table>
+    <h1>$10,000 Five-Round Open Classical Chess Tournament</h1>
+    <h2>Hosted by the UMass Amherst Chess Club</h2>
+    
+    <div class="content-block details" id="details">
+        <h3>Details:</h3>
+        <p>The UMass Amherst Chess Club is proud to announce our first classical chess tournament! It is a five-round, two-day tournament from April 13-14, hosted in the Student Union Ballroom at 41 Campus Center Way, Amherst, MA 01002. We expect participants from all over and of all ages to compete! Please bring your own sets and chess clocks as we anticipate a shortage. Unrated players are eligible for entry. Note: the prizes above are based on 170 players, and a valid USCF membership is required to play.</p>
+        <p>Food: Within a 5 minute walk from the Student Union Ballroom, we have Harvest Market and Worcester Dining Commons with plenty of options. We've been ranked #1 in Dining across the US, so give our food a try — it’s definitely worth it! There are also several hydration stations just outside the playing hall.</p>
+        <p class="location-link">Location: <a href="https://maps.google.com/?q=41+Campus+Center+Way,+Amherst,+MA+01002" target="_blank">Student Union Ballroom, 41 Campus Center Way, Amherst, MA 01002</a></p>
+    </div>
 
-            <p><strong>Note:</strong> Unrated players welcome. Prizes based on 55 players. Valid USCF membership required.</p>
+    <div class="content-block prize-section" id="prizes">
+        <h3>Prize Money:</h3>
+        <p><strong>Open (total = $5000)</strong><br>
+        1st - $2000<br>
+        2nd - $1250<br>
+        3rd - $750<br>
+        U2200 (1st) - $600<br>
+        U2000 (1st) - $400</p>
 
-            <p class="creative-statement">"In the world of chess, every move matters. Join us at the UMass Spring Chess Classic and make your move count!"</p>
+        <p><strong>U1800 (total = $3750)</strong><br>
+        1st - $1500<br>
+        2nd - $1000<br>
+        3rd - $600<br>
+        U1600 (1st) - $400<br>
+        U1400 (1st) - $250</p>
 
-            <button class="register-button">Register Now</button>
+        <p><strong>U1200 (total = $1250) (Unrated max - $400)</strong><br>
+        1st - $700<br>
+        2nd - $400<br>
+        3rd - $150</p>
+    </div>
 
-            <p>Contact for more information: <a href="mailto:umasschessclub@gmail.com">umasschessclub@gmail.com</a> OR <a href="mailto:aryanjoshi@umass.edu">aryanjoshi@umass.edu</a></p>
-        </div>
-        <div class="footer">
-            &copy; 2024 UMass Amherst Chess Club. Embrace the Challenge.
-        </div>
+    <div class="content-block entry-fee" id="entry-fee">
+        <h3>Entry Fees:</h3>
+        <p>Advanced Entry fee: $110 for Open, $80 for U1800, $35 for U1200 rated. $5 less for unrated in each section.</p>
+        <p>Onsite Entry fee: $120 for Open, $85 for U1800, $35 for U1200 rated. $5 less for unrated in each section.</p>
+        <p>Registration begins at 8:45 am and ends at 9:30 am.</p>
+    </div>
+
+    <div class="content-block time-info" id="time-info">
+        <h3>Time Control and Rounds:</h3>
+        <p>Time control: G/90;d5.</p>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Round</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>1</td>
+                <td>10:00 am</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>2</td>
+                <td>2:00 pm</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>3</td>
+                <td>5:30 pm</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>4</td>
+                <td>10:00 am</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>5</td>
+                <td>2:00 pm</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="content-block blitz" id="blitz">
+        <h3>Blitz Tournament Format:</h3>
+        <p>Entry fee will be $15. Players will be divided into groups of 6 based on their strength. USCF blitz and Chess.com/Lichess Blitz ratings will be taken into consideration when making groups. Each player will play 10 games of 3+2 blitz in a double round robin format within each group. The top player in each group goes home with $75. In case of a tie, Armageddon with bids will be used to decide the winner.</p>
+    </div>
+
+    <div class="content-block registration" id="registration">
+        <h3>Registration:</h3>
+        <p>Link to registration form will be provided here. Once the form is completed, you will be emailed a link where you can pay the pre-registration fee.</p>
+    </div>
+
+    <div class="content-block contact-info" id="contact">
+        <h3>Contact:</h3>
+        <p>Email: <a href="mailto:umasschessclub@gmail.com">umasschessclub@gmail.com</a> or <a href="mailto:aryanjoshi@umass.edu">aryanjoshi@umass.edu</a></p>
     </div>
 </body>
 </html>
+
+
